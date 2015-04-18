@@ -1,0 +1,134 @@
+@charset "UTF-8";
+/* CSS Document */
+header{
+	position:fixed;
+	z-index:999;
+}
+
+nav{
+	position:fixed;
+	z-index:500;
+	position:absolute; left:10px;
+}
+
+#navlinks{
+	display:block;
+}
+#one, #three { 
+/*background: url(../../Documents/pics/screenshots/2013_gravity_movie-wide.jpg) 50% 0 repeat fixed; */
+min-height: 1000px;
+height: 1000px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+ /* z-index:-1;*/
+  left:0; right:0;
+}
+
+#one{
+	background: url(images/fem.jpg) center fixed;
+}
+	
+#three { 
+background: url(images/toplessmarch.jpg) 40% 0 repeat fixed;
+}
+ 
+#two, #four { 
+height: 1000px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+/*  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8); */ 
+
+}
+
+#two{
+	background:url(images/bikinikillconcertred.jpg) 70% 0 repeat;
+}
+#four{
+	background:url(images/bikinikillconcertred.jpg) 70% 0 repeat;
+}
+/*
+#wrapper,{
+	display:block;
+	height: 720px;
+	width:960px;
+	margin:auto;
+	padding:20px;
+	
+}
+#container{
+background-color:#FFFFCC;
+	display:block;
+	float:left;
+	height: 720px;
+	width:960px;
+	overflow:auto;
+	padding:20px;
+}
+
+#prev2, #prev3, #prev4{
+	background-image:url(images/prev.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	display:block;
+	float:left;
+	height:720px;
+	width:100px;
+	position:relative;
+	z-index: 99;
+	cursor:pointer;
+}
+
+#next2, #next3, #next4{
+		background-image:url(images/next.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	display:block;
+	float:right;
+	height:720px;
+	width:100px;
+	position:relative;
+	z-index: 99;
+	cursor:pointer;
+}
+#slider2, #slider3, #slider4{
+	display:block;
+	float:left;
+	margin-left:auto;
+	margin-right:auto;
+	height:720px;
+	width:960px;
+	overflow:hidden;
+	position:absolute;
+
+}
+#slide1,#slide2{
+	height:720px;
+	width:960px;
+	background:#FFFFFF;
+	margin-right:auto;
+	margin-left:auto;
+}
+
+#slide_p{
+	padding-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	width:620px;
+	text-wrap:unrestricted;
+}
+#slide_img{
+	float:left;
+	padding:10px;
+}
+
+h2{
+	margin-left:auto;
+	margin-right:auto;
+	width:620px;
+}
+*/

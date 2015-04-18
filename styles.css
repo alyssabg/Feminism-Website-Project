@@ -1,0 +1,206 @@
+@charset "UTF-8";
+/* CSS Document */
+html{
+	min-width:100px;
+	
+}
+
+#one, #three, #five, #seven { 
+/*background: url(../../Documents/pics/screenshots/2013_gravity_movie-wide.jpg) 50% 0 repeat fixed; */
+min-height: 1000px;
+height: 1000px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+ /* z-index:-1;*/
+  left:0; right:0;
+}
+
+#one{
+	background: url(images/fem.jpg) center fixed;
+}
+	
+#three { 
+background: url(images/toplessmarch.jpg) 40% 0 repeat fixed;
+}
+
+#five{
+	background: url(images/bg1.jpg) 40% 0 repeat fixed;
+}
+
+#six{
+	background: url(images/bg2.jpg) fixed;
+}
+
+#seven{
+	background: url(images/nomeansno.jpg) 40% 0 repeat fixed;
+}
+ 
+#two, #four, #six { 
+height: 1000px; 
+  margin: 0 auto; 
+  width: 100%; 
+  max-width: 1920px; 
+  position: relative; 
+/*  -webkit-box-shadow: 0 0 50px rgba(0,0,0,0.8);
+  box-shadow: 0 0 50px rgba(0,0,0,0.8); */ 
+
+}
+
+#two{
+	background:url(images/bkconcertb&w.jpg)100% 0 repeat;
+}
+#four{
+	background: url(images/fasicstepidemic.jpg) 100% 0 repeat;
+}
+
+#one article, #three article, #five article, #seven article{ 
+/*  height: 458px;*/ 
+  position: absolute; 
+  text-align: center; 
+  top: 250px; 
+  width: 100%; 
+  z-index:10;
+}
+#two article, #four article, #six article { 
+  height: 600px; 
+  position: absolute; 
+  text-align: center; 
+  top: 150px; 
+  width: 100%;
+  overflow:hidden; 
+
+}
+header{
+	position:fixed;
+	z-index:999;
+}
+
+nav{
+	position:fixed;
+	z-index:10;
+	position:absolute;
+	background-image:url(images/sidenav2.png);
+	height:1741px;
+	width:175px;
+	
+}
+
+#navlinks{
+	padding-top:5px;
+	display:block;
+}
+
+#navimg{
+	height:40px;
+}
+
+#navimg:hover{
+	height:49px;
+}
+
+#audio1{
+	position: relative;
+	position:absolute; bottom:50px;
+	left:40%;
+}
+
+#wrapper,{
+	display:block;
+	height: 720px;
+	width:960px;
+	margin:auto;
+	padding:20px;
+	background:none;
+	
+}
+#container{
+	background:none;
+	display:block;
+	float:left;
+	height: 720px;
+	width:960px;
+	overflow:auto;
+	padding:20px;
+	
+}
+
+#prev2, #prev3, #prev4, #prev5, #prev6{
+	/*background-image:url(images/prev.png);*/
+	background-image:url(images/prev_finger.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	display:block;
+	float:left;
+	height:720px;
+	width:100px;
+	position:relative;
+	z-index: 99;
+	cursor:pointer;
+}
+
+#next2, #next3, #next4, #next5,  #next6{
+	/*background-image:url(images/next.png);*/
+	background-image:url(images/next_finger.png);
+	background-repeat:no-repeat;
+	background-position:center center;
+	display:block;
+	float:right;
+	height:720px;
+	width:100px;
+	position:relative;
+	z-index: 99;
+	cursor:pointer;
+}
+#slider2, #slider3, #slider4, #slider5, #slider6{
+	display:block;
+	/*float:left;*/
+	margin-left:auto;
+	margin-right:auto;
+	height:720px;
+	width:960px;
+	overflow:hidden;
+	position:absolute;
+	background:none;
+
+}
+#slide1,#slide2{
+	height:720px;
+	width:960px;
+	background:#FFFFFF;
+	margin-right:auto;
+	margin-left:auto;
+	border-radius:10px;
+}
+
+#slide_p{
+	padding-top:20px;
+	margin-left:auto;
+	margin-right:auto;
+	width:620px;
+	text-wrap:unrestricted;
+}
+#slide_img{
+	float:left;
+	padding:10px;
+}
+#slide_img2{
+	float:right;
+	padding:10px;
+}
+
+h2{
+	margin-left:auto;
+	margin-right:auto;
+	width:620px;
+	padding-top:20px;
+}
+
+#postition_slide{
+	margin-left:auto;
+	margin-right:auto;
+	width:960px;
+	padding-top:5%;
+	
+}

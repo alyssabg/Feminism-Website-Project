@@ -1,0 +1,436 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>The New F-Word</title>
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="styles.css">
+<script src="jquery-2.0.3.min.js"></script>
+<script src="slider.js"></script>
+<script src="cycle.js"></script>
+</head>
+<script>//parallax scroll
+$(document).ready(function(){
+    $('section[data-type="background"]').each(function(){
+        var $bgobj = $(this); // assigning the object
+    
+        $(window).scroll(function() {
+            var yPos = -($window.scrollTop() / $bgobj.data('speed')); 
+            
+            // Put together osur final background position
+            var coords = '50% '+ yPos + 'px';
+
+            // Move the background
+            $bgobj.css({ backgroundPosition: coords });
+        }); 
+    });    
+});
+</script>
+<script>//smooth scroll
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+</script>
+<script>//slider
+ $('#slider2').cycle({
+	 fx:'scrollHorz',
+	 //delay: 500000000,
+	 timeout: 50000000,
+	 speed:'slow',
+	 next: '#next2',
+	 prev: '#prev2'
+ });
+ 
+ $('#slider3').cycle({
+	 fx:'scrollHorz',
+	 //delay: 500000000,
+	 timeout: 50000000,
+	 speed:'slow',
+	 next: '#next3',
+	 prev: '#prev3'
+ });
+ 
+ $('#slider4').cycle({
+	 fx:'scrollHorz',
+	 //delay: 500000000,
+	 timeout: 50000000,
+	 speed:'slow',
+	 next: '#next4',
+	 prev: '#prev4'
+ });
+ 
+ $('#slider5').cycle({
+	 fx:'scrollHorz',
+	 //delay: 500000000,
+	 timeout: 50000000,
+	 speed:'slow',
+	 next: '#next5',
+	 prev: '#prev5'
+ });
+ 
+ $('#slider6').cycle({
+	 fx:'scrollHorz',
+	 //delay: 500000000,
+	 timeout: 50000000,
+	 speed:'slow',
+	 next: '#next6',
+	 prev: '#prev6'
+ });
+</script>
+
+<body>
+<header>
+<nav >
+<a href="#one" id="navlinks"><img src="images/top.png" id="navimg" style="padding-top:15px"></a>
+<a href="#two" id="navlinks"><img src="images/thewaves.png" id="navimg"></a>
+<a href="#three" id="navlinks"><img src="images/3rdwave.png" id="navimg"></a>
+<a href="#four" id="navlinks"><img src="images/modern.png" id="navimg"></a>
+<a href="#five" id="navlinks"><img src="images/slut.png" id="navimg"></a>
+<a href="#six" id="navlinks"><img src="images/music.png" id="navimg"></a>
+<a href="#seven" id="navlinks"><img src="images/sourcetab.png" id="navimg"></a>
+</nav>
+</header>
+
+<section id="one" data-type="background" data-speed="10"> 
+<audio controls autoplay id="audio1">
+    	<source src="sound/TrueFeminism.mp3" type="audio/mpeg">
+       <!--copyright free src = https://archive.org/details/TrueFeminism-->
+    </audio>
+ <article>
+ </article>                           
+</section>   
+     
+<section id="two" data-type="background" data-speed="10">
+<!--bg img src bing search filter free to share and use : http://media-cache-ec0.pinimg.com/originals/e1/ee/83/e1ee8373be4a0b0873bab7a5ce51d813.jpg-->
+<!--<article>-->
+<div id="postition_slide">
+
+<div id="wrapper">
+	<div id="container">
+    	<div class="controller" id="prev2"></div>
+        <div id="slider2">
+        	<div id="slide1">
+            	<p id="slide_p">
+         		 <img src="images/1wave.png" height="60px"><br>
+                <!--bing free to use and share:http://thedevelopmentofwomensrights.weebly.com/uploads/1/1/5/8/11585765/5194282.png-->
+                The first wave of feminism took place in the late 19th and early 20th centuries, emerging out of an environment of urban industrialism and liberal, socialist politics. The goal of this wave was to open up opportunities for women, with a focus on suffrage. The wave formally began at the Seneca Falls Convention in 1848, when 300 men and women rallied to the cause of equality for women. Elizabeth Cady Stanton (d.1902) drafted the Seneca Falls Declaration outlining the new movement's ideology and political strategies.
+                <br>
+                <br>
+                In its early stages, feminism was interrelated with the temperance and abolitionist movements and gave voice to now-famous activists like the African-American Sojourner Truth (d.1883), who demanded, "Ain't I a woman?" Victorian America saw women acting in very "un-ladylike" ways (public speaking, demonstrating, stints in jail), which challenged the "cult of domesticity."<img src="images/1880s.png" id="slide_img" >Discussions about the vote and women's participation in politics led to an examination of the differences between men and women as they were then viewed. Some claimed that women were morally superior to men, and so their presence in the civic sphere would improve public behavior and the political process. 
+                <br><br>Source: The Three Waves
+                </p>
+            </div>
+            
+            
+           <div id="slide1">
+            	<p id="slide_p">
+                <img src="images/2wave.png" height="60px"><br>
+                The second wave began in the 1960s and continued into the 1990s. This wave unfolded in the context of the anti-Vietnam War and civil rights movements and the growing self-consciousness of a variety of minority groups around the world. The New Left was on the rise, and the voice of the second wave was increasingly radical. In this phase, sexuality and reproductive rights were dominant issues, and much of the movement's energy was focused on passing the Equal Rights Amendment to the constitution guaranteeing social equality regardless of sex.
+                <br><br>
+                This phase began with protests against the Miss America pageant in Atlantic City in 1968 and 1969. Feminists parodied what they held to be a degrading "cattle parade" that reduced women to objects of beauty dominated by a patriarchy that sought to keep them in the home or in dull, low-paying jobs. The radical New York group called the Redstockings staged a counter pageant, in which they crowned a sheep as Miss America and threw "oppressive" feminine artifacts such as bras, girdles, high-heels, makeup and false eyelashes into the trashcan.
+                <br><br>Because the second wave of feminism found voice amid so many other social movements, it was easily marginalized and viewed as less pressing than, for example, Black Power or the effort to end the war in Vietnam. Feminists reacted by forming women-only organizations (such as NOW) and "consciousness raising" groups. In publications like "The BITCH Manifesto" and "Sisterhood is Powerful," feminists advocated for their place in the sun. The second wave was increasingly theoretical, based on a fusion of neo-Marxism and psycho-analytic theory and began to associate the subjugation of women with broader critiques of patriarchy, capitalism, normative heterosexuality, and the woman's role as wife and mother. Sex and gender were differentiated — the former being biological, and the later a social construct that varies culture-to-culture and over time.
+                <br><br>
+                <img src="images/girl.png" id="girl" height="350" style="float:right">
+                Whereas the first wave of feminism was generally propelled by middle class white women, the second phase drew in women of color and developing nations, seeking sisterhood and solidarity and claiming, "Women's struggle is class struggle." Feminists spoke of women as a social class and coined phrases such as "the personal is political" and "identity politics" in an effort to demonstrate that race, class and gender oppression are all related. They initiated a concentrated effort to rid society top-to-bottom of sexism, from children's cartoons to the highest levels of government.
+                <br><br>Source: The Three Waves
+                </p>
+            </div>
+              
+       <!--    <div id="slide1">
+            	<p id="slide_p">
+                <img src="images/3wave.png" height="60px"><br>
+                The third phase of feminism began in the mid-1990s and is informed by post-colonial and post-modern thinking. In this phase many constructs have been destabilized, including the notions of "universal womanhood," body, gender, sexuality and hetreronormativity. An aspect of third wave feminism that mystifies the mothers of the earlier feminist movement is the readoption by young feminists of the very lipstick, high heels and cleavage proudly exposed by low cut necklines that the first two phases of the movement identified with male oppression. Pinkfloor expressed this new position when she said; "It's possible to have a push-up bra and a brain at the same time."
+                <br><br>
+                The "grrls" of the third wave have stepped onto the stage as strong and empowered, eschewing victimization and defining feminine beauty for themselves as subjects, not as objects of a sexist patriarchy. They have developed a rhetoric of mimicry, which reappropriates derogatory terms like "slut" and "bitch" in order to subvert sexist culture and deprive it of verbal weapons. The web is an important aspect of the new "girlie feminism." E-zines have provided "cybergrrls" and "netgrrls" another kind of women-only space. At the same time — rife with the irony of third-wave feminism because cyberspace is disembodied — it permits all users the opportunity to cross gender boundaries and so the very notion of gender has been challenged.
+                <br><br>
+                This is in keeping with the third wave's celebration of ambiguity and refusal to think in terms of "us-them" or in some cases their refusal to identify themselves as "feminists" at all. Grrl-feminism tends to be global and multi-cultural, and it shuns simple answers or artificial categories of identity, gender and sexuality. Its transversal politics means that differences such as those of ethnicity, class, sexual orientation, etc., are celebrated but recognized as dynamic, situational and provisional. Reality is conceived not so much in terms of fixed structures and power relations, but in terms of performance within contingencies. Third wave feminism breaks boundaries.
+				 </p>  
+               </div>-->
+            
+           </div>
+        <div class="controller" id="next2"></div>
+        </div>
+        </div>
+</div>        
+<!--</article>-->
+</section>
+
+<section id="three" data-type="background" data-speed="10">
+<!--bg img src bing search filter free to share and use : http://dlmagazine.org/wp-content/uploads/2013/07/Screen-shot-2013-07-01-at-11.47.46-AM.jpg-->
+
+<div id="postition_slide">
+
+<div id="wrapper">
+	<div id="container">
+    	<div class="controller" id="prev3"></div>
+        <div id="slider3">
+        	<div id="slide1">
+            	<p id="slide_p">
+                <img src="images/3wave.png" height="60px"><br>
+                The third wave of feminism emerged in the mid-1990s. It was led by so-called Generation Xers who, born in the 1960s and ’70s in the developed world, came of age in a media-saturated and culturally and economically diverse milieu. <img src="images/sign.png" id="slide_img2" height="250px">Although they benefitted significantly from the legal rights and protections that had been obtained by first- and second-wave feminists, they also critiqued the positions and what they felt was unfinished work of second-wave feminism.
+                <br><br>The third wave was made possible by the greater economic and professional power and status achieved by women of the second wave, the massive expansion in opportunities for the dissemination of ideas created by the information revolution of the late 20th century, and the coming of age of Generation X scholars and activists.
+                <br><br>Some early adherents of the new approach were literally daughters of the second wave. Third Wave Direct Action Corporation (organized in 1992) became in 1997 the Third Wave Foundation, dedicated to supporting “groups and individuals working towards gender, racial, economic, and social justice”; both were founded by (among others) Rebecca Walker, the daughter of the novelist and second-waver Alice Walker. Jennifer Baumgardner and Amy Richards, authors of Manifesta: Young Women, Feminism, and the Future (2000), were both born in 1970 and raised by second wavers who had belonged to organized feminist groups, questioned the sexual division of labour in their households, and raised their daughters to be self-aware, empowered, articulate, high-achieving women.
+                <!--bing free to share and use search: http://www.sixteensmallstones.org/wp-content/uploads/2013/03/feminist.png-->
+                <br><br>Source: Feminism
+                </p>
+            </div>
+            
+           <div id="slide1">
+            	<p id="slide_p">
+                 <img src="images/3wavecont.png" height="60px"><br>
+                 These women and others like them grew up with the expectation of achievement and examples of female success as well as an awareness of the barriers presented by sexism, racism, and classism. They chose to battle such obstacles by inverting sexist, racist, and classist symbols, fighting patriarchy with irony, answering violence with stories of survival, and combating continued exclusion with grassroots activism and radical democracy.  <img src="images/gay.jpg" id="slide_img" >Rather than becoming part of the “machine,” third wavers began both sabotaging and rebuilding the machine itself.
+                <br><br>Influenced by the postmodernist movement in the academy, third-wave feminists sought to question, reclaim, and redefine the ideas, words, and media that have transmitted ideas about womanhood, gender, beauty, sexuality, femininity, and masculinity, among other things. There was a decided shift in perceptions of gender, with the notion that there are some characteristics that are strictly male and others that are strictly female giving way to the concept of a gender continuum. From this perspective each person is seen as possessing, expressing, and suppressing the full range of traits that had previously been associated with one gender or the other. For third-wave feminists, therefore, “sexual liberation,” a major goal of second-wave feminism, was expanded to mean a process of first becoming conscious of the ways one’s gender identity and sexuality have been shaped by society and then intentionally constructing (and becoming free to express) one’s authentic gender identity.
+               <br><br>Source: Feminism	
+               <!--http://cdn6.triplepundit.com/wp-content/uploads/2011/05/Plaatje-Christopher-Human-Rights.jpg-->
+                </p>
+            </div>
+           
+          <div id="slide1">
+            	<p id="slide_p">
+                 <img src="images/manifest.png" height="60px"><br>
+                 Third wavers inherited a foothold of institutional power created by second wavers, including women’s studies programs at universities, long-standing feminist organizations, and well-established publishing outlets such as Ms. magazine and several academic journals. These outlets became a less important part of the culture of the third wave than they had been for the second wave.
+                <br><br>
+                <img src="images/guerilla.gif" id="slide_img" >
+                In expressing their concerns, third-wave feminists actively subverted, co-opted, and played on seemingly sexist images and symbols. This was evident in the double entendre and irony of the language commonly adopted by people in their self-presentations. Slang used derogatorily in most earlier contexts became proud and defiant labels. The spirit and intent of the third wave shone through the raw honesty, humour, and horror of Eve Ensler’s play (and later book) The Vagina Monologues, an exploration of women’s feelings about sexuality that included vagina-centred topics as diverse as orgasm, birth, and rape; the righteous anger of punk rock’s riot grrrls movement; and the playfulness, seriousness, and subversion of the Guerrilla Girls, a group of women artists who donned gorilla masks in an effort to expose female stereotypes and fight discrimination against female artists.
+                <br><br>Source: Feminism
+                <!--bing free to use and share: http://2.bp.blogspot.com/_TPBXVqeHlj4/TOcfhYfK2XI/AAAAAAAAAIs/5odQtCGIMUI/s1600/guerilla_naked.gif-->
+                </p>
+            </div>
+            
+            <div id="slide1">
+            	<p id="slide_p">
+                <img src="images/manifestcont.png" height="60px"><br>
+                The third wave was much more inclusive of women and girls of colour than the first or second waves had been. In reaction and opposition to stereotypical images of women as passive, weak, virginal, and faithful, or alternatively as domineering, demanding, slutty, and emasculating, the third wave redefined women and girls as assertive, powerful, and in control of their own sexuality. <img src="images/buffy.jpg" id="slide_img2">In popular culture this redefinition gave rise to icons of powerful women that included the singers Madonna, Queen Latifah, and Mary J. Blige, among others, and the women depicted in television series such as Buffy the Vampire Slayer (1997–2003), Sex and the City (1998–2004), and Girlfriends (2000–08). Media programming for children increasingly depicted smart, independent girls and women in lead roles, including Disney heroines such as Mulan (1998) and Helen Parr and her daughter, Violet (The Incredibles, 2006), and television characters such as Dora (Dora the Explorer, 1999–2006), Carly and Sam (iCarly, 2006– ), and Sesame Street’s first female lead, Abby Cadabby, who debuted in 2006. The sassy self-expression of “Girl Power” merchandise also proved popular.
+                <br><br>The increasing ease of publishing on the Internet meant that e-zines (electronic magazines) and blogs became ubiquitous. Many serious independent writers, not to mention organizations, found that the Internet offered a forum for the exchange of information and the publication of essays and videos that made their point to a potentially huge audience. The Internet radically democratized the content of the feminist movement with respect to participants, aesthetics, and issues.
+                <br><br>Source: Feminism
+            
+                <!--bing free to use and share: http://ts1.mm.bing.net/th?&id=HN.608003941799168387&w=300&h=300&c=0&pid=1.9&rs=0&p=0-->
+                </p>
+                </div>
+          
+           </div>
+        <div class="controller" id="next3"></div>
+        </div>
+        </div>
+ </div>
+</section>
+
+<section id="four" data-type="background" data-speed="10">
+<!-- bing free to share and use search: http://ww4.hdnux.com/photos/27/57/76/6225851/3/960x540.jpg-->
+ <!--<article>-->
+<div id="postition_slide">
+
+<div id="wrapper">
+	<div id="container">
+    	<div class="controller" id="prev4"></div>
+        <div id="slider4">
+        	<div id="slide1">
+            	<p id="slide_p">
+                <img src="images/modfem.png" height="60px"><br>
+                “Are you a feminist?” might be the toughest question a female celebrity has to answer in 2014. Taylor Swift stays clear of the word. Lena Dunham embraces it and Beyonce grew into it. Let’s just say it’s complicated. Come on too strong and a young actress can risk alienating a fan base that isn’t steeped in day-to-day gender issues. Avoid the question and they incur the wrath of the Internet and feminists everywhere. Here’s a look at what some famous women have said about the other “f” word.
+				<br><br>Emma Watson's <em>He For She Campaign</em> Speech:<br><br><iframe width="420" height="315" src="https://www.youtube.com/embed/p-iFl4qhBsE" frameborder="0" allowfullscreen></iframe></p>
+            </div>
+         
+          <div id="slide1">
+            	<p id="slide_p">
+                <img src="images/sinead.png" height="60px"><br>
+				Sinéad doesn’t like any label that ends in -ist, and that includes the f-word, she told <a href="http://www.theguardian.com/music/2014/jul/27/sinead-o-connor-interview-i-deserve-to-be-a-priest" target="_blank">The Guardian</a> in July.” <img src="images/sinead_oconner.jpg" id="slide_img" >I don’t think of myself as being a feminist,” the 47-year-old musician said. “I wouldn’t label myself anything, certainly not something with an ‘ism’ or an ‘ist’ at the end of it. I’m not interested in anything that is in any way excluding of men.”
+				<br><br>
+                The declaration came as a bit of a surprise to some fans, given that O’Connor titled her tenth and most recent album I’m Not Bossy, I’m the Boss. The hashtag #banbossy campaign was created by Sheryl Sandberg, author of Lean In, and has been supported by fellow self-described feminist Beyoncé.
+                <br><br>Source: Time
+                </p>
+            </div>
+            
+            <div id="slide1">
+            	<p id="slide_p">
+                <img src="images/lena.png" height="60px"><br>
+                “Women saying ‘I’m not a feminist’ is my greatest pet peeve,” said the 28-year-oldGirls star and writer in 2013 during <a href="http://metro.co.uk/2013/01/14/lena-dunham-the-fact-my-girls-character-is-not-a-size-4-is-meaningful-3348636/" target="_blank">an interview with Metro</a>. “Do you believe that women should be paid the same for doing the same jobs? Do you believe that women should be allowed to leave the house?<img src="images/lena_dunham.jpg" id="slide_img2" > Do you think that women and men both deserve equal rights? Great, then you’re a feminist.”
+ 
+                <br><br>Source: Time
+                </p>
+                </div>
+                
+                <div id="slide1">
+            	<p id="slide_p">
+                <img src="images/taylor.png" height="60px"><br>
+                “I don’t really think about things as guys versus girls. I never have,” the 24-year-old pop star <a href="http://www.thedailybeast.com/articles/2012/10/22/taylor-swift-dishes-on-her-new-album-red-dating-heartbreak-and-grey-s-anatomy.html?utm_source=feedburner&utm_medium=feed&utm_campaign=Feed%3A+thedailybeast%2Farticles+%28The+Daily+Beast+-+Latest+Articles%29" target="_blank">told the Daily Beast in 2012</a>. “I was raised by parents who brought me up to think if you work as hard as guys, you can go far in life.”
+                <img src="images/taylor_swift.jpg"id="slide_img" >
+                <br><br>
+                Swift’s ambivalence didn’t stop one Brown University student from creating a <a href="https://twitter.com/feministtswift" target="_blank">popular parody Twitter account</a> that adds feminist phrases Taylor Swift song lyrics.
+
+                <br><br>Source: Time
+                </p>
+                </div>
+                
+                <div id="slide1">
+            	<p id="slide_p">
+                <img src="images/amy.png" height="60px"><br>
+                Instead of steering clear of the word, Amy Poehler has publicly embraced feminism. “But then they go on to explain what they support and live by — it’s feminism exactly,” the 42-year-old comedian told <a href="http://www.elle.com/culture/celebrities/a6/amy-poehler-women-in-tv-2014-interview/" target="_blank">Elle magazine in January</a>. “I think some big actors and musicians feel like they have to speak to their audience and that word is confusing to their audience. But I don’t get it. That’s like someone being like, ‘I don’t really believe in cars, but I drive one every day and I love that it gets me places and makes life so much easier and faster and I don’t know what I would do without it.’”
+               <img src="images/amy_poehler.jpg" id="slide_img" >
+                <br><br>Source: Time
+                </p>
+                </div>
+                
+                <div id="slide1">
+            	<p id="slide_p">
+                <img src="images/halle.png" height="60px"><br>
+                “I would say on some levels I am [a feminist]. Angela Davis is one of my heroes,” the 47-year-old Oscar winner told <a href="http://www.ebony.com/video/entertainment-culture/halle-berry-talks-feminism-and-frankie-alice-333#axzz356hDNT1Y" target="_blank">Ebony</a> in April, referring to the political activist known for her feminist views. “And Gloria Steinem—these are people who, as I was growing, I was moved by and impacted by and thought very deeply about.”
+                <br><br>Source: Time
+                <img src="images/halle_berry.jpg" id="slide_img2" >
+                </p>
+                </div>
+                
+                <div id="slide1">
+            	<p id="slide_p">
+                <img src="images/ellen.png" height="60px"><br>
+                “I don’t know why people are so reluctant to say they’re feminists. Maybe some women just don’t care. But how could it be any more obvious that we still live in a patriarchal world when feminism is a bad word?” the 27-year-old Juno and X-Men star said in a 2013 <a href="http://time.com/2861278/famous-women-feminism/">interview with The Guardian</a>.
+                <br><br>Source: Time
+                <img src="images/ellen_page.jpg" id="slide_img2" >
+                </p>
+                </div>
+                
+                <div id="slide1">
+            	<p id="slide_p">
+               <img src="images/bey.png" height="60px"><br>
+                Beyoncé was hesitant to describe herself as a feminist to <a href="http://www.vogue.co.uk/news/2013/04/04/beyonce-interview-may-vogue" target="_blank">British Vogue in April 2013</a>. “That word can be very extreme,” the 32-year-old said. “But I guess I am a modern-day feminist. I do believe in equality. Why do you have to choose what type of woman you are? Why do you have to label yourself anything? I’m just a woman and I love being a woman.”
+					<br><br>
+                    <img src="images/beyonce.jpg" id="slide_img2" >
+                    But the singer seems to have come around. Her self-titled December 2013 album features a number of <a href="http://time.com/1851/flawless-5-lessons-in-modern-feminism-from-beyonce/" target="_blank">feminist ideas</a>. Her song “Flawless” sandwiches an excerpt from Nigerian writer Chimamanda Ngozi Adichie’s TEDx talk, “We should all be feminists,” in between lyrics like “I took some time to live my life, but don’t think I’m just his little wife.”
+                    <br><br>
+                    After the album’s release Beyoncé even wrote a post for the Shriver Report called, <a href="http://shriverreport.org/gender-equality-is-a-myth-beyonce/" target="_blank">“Gender Equality is a Myth!”</a> in January. “We need to stop buying into the myth about gender equality. It isn’t a reality yet,” she wrote.
+						<br><br>Source: Time
+                </p>
+                </div>
+     
+           </div>
+        <div class="controller" id="next4"></div>
+        </div>
+        </div>
+</div>
+</section>
+ 
+ <section id="five" data-type="background" data-speed="10">
+ <div id="postition_slide">
+
+<div id="wrapper">
+	<div id="container">
+    	<div class="controller" id="prev5"></div>
+        <div id="slider5">
+        	<div id="slide1">
+            	<p id="slide_p">
+                <img src="images/slutshame.png" height="60px"><br>
+                Slut Shaming is the act of criticizing a woman for her real or presumed sexual activity, or for behaving in ways that someone thinks are associated with her real or presumed sexual activity. 
+				<br><br>
+                Women's sex lives and sexuality are matters of their own choice, and nobody else's business.
+                <br><br>
+                People (usually men, but sometimes women) often criticize women's appearance for being too sexual (according to their standards of acceptable sexuality), in order to control women. They also often blame women for being victims/survivors of rape, by using similar appearance-based criticisms. Both of these uses of shame in order to dominate and control women are examples of rape culture.
+					<br><br>
+                     <img src="images/pic1.jpg" id="slide_img" >
+                    In geek circles, there is often a tension between women's own sexual expression or choices in dress/grooming, and between Sexualized environments, which can be unwelcoming for some women. One important point to consider is who is served by (eg.) the women in skimpy clothes? If the women are doing it for themselves (as in the case of cosplay, for example) it is very different from if a company has hired women to dress sexily to attract male customers. In the latter case, it's important to not slut-shame the women who were working, but to criticize the attitudes and actions of the company that hired them.
+			
+                </p>
+				</div>
+          
+          <div id="slide1">
+            	<p id="slide_p">
+                <img src="images/slutcont.png" height="60px"><br>
+                It is sometimes argued that although women can freely choose to dress/act sexily, those choices aren't made in a vacuum, and may be the result of broader sexist norms. This is true; and yet the criticism in these cases should be aimed at the sexist norms, which are the actual problem.
+                <br><br>
+                Rape Culture is a term used to describe the normalization of sexual assault in a society. Wikipedia describes rape culture thus: "... a culture in which rape and other sexual violence (usually against women and gender diverse peoples) are common and in which prevalent attitudes, norms, practices, and media condone, normalize, excuse, or encourage sexualized violence."
+				<br><br>
+                <img src="images/pic2.jpg" id="slide_img2" >
+                It frequently includes objectifying women or portraying social relations as a "war of the sexes", both of which lead to dehumanization. Dehumanization, in turn, leads to sexual violence against victims being condoned as they are mentally considered "objects" instead of "a fellow human". In this way, sexism that does not explicitly deal with rape can still contribute to rape culture, especially if the sexism implies that women are primarily or exclusively valued for their desirability to heterosexual men, or that sexual relationships follow a predator/prey model.
+            <br><br>Source: Geek Feminism
+            </p>
+            </div>
+          <div id="slide1">
+            	<p id="slide_p">
+                <img src="images/slutcont.png" height="60px"><br>
+                We can as well see this from the point of view of rigidity of gender roles in a society. Whenever a society prescribes rigid gender roles, then it commits itself to disrespect for gender diverse roles. This amounts to objectification of the body and therefore any culture that prescribes rigid gender roles is a rape culture.
+				<br><br>
+                This same dynamic of the dehumanization of femininity contributes to defensive homophobia and violence by men against men perceived to be insufficiently masculine. By cultural definition, male victims of rape have been feminized and, just like female victims, are thus erased, ignored, or deemed unimportant. (Male victims are sometimes brought up in an attempt to derail conversations about rape culture by people seeking to invalidate the concept. These detractors are often unaware that misogyny underlies crimes of sexual dominance against men as well as women.)
+					<img src="images/pic3.jpg" id="slide_img2" >
+                    <br><br>
+                    Rape Culture affects every woman.  The rape of one woman is a degradation, terror, and limitation to all women. Most women and girls limit their behavior because of the existence of rape. Most women and girls live in fear of rape. Men, in general, do not. That’s how rape functions as a powerful means by which the whole female population is held in a subordinate position to the whole male population, even though many men don’t rape, and many women are never victims of rape.  This cycle of fear is the legacy of Rape Culture.
+						<br><br>Source: Geek Feminism
+                </p>
+                </div>
+           </div>
+        <div class="controller" id="next5"></div>
+        </div>
+        </div>
+</div>
+</section>
+
+<section id="six" data-type="background" data-speed="10">
+ <div id="postition_slide">
+
+<div id="wrapper">
+	<div id="container">
+    	<div class="controller" id="prev6"></div>
+        <div id="slider6">
+        	<div id="slide1">
+            	<p id="slide_p">
+                <img src="images/riot.png" height="60px"><br>
+                Riot grrrl is an underground feminist hardcore punk movement that originally started in the early 1990s, in Washington, D.C., and the greater Pacific Northwest, noticeably in Olympia, Washington. It is often associated with third-wave feminism, which is sometimes seen as its starting point. It has also been described as musical genre that came out of indie rock, with the punk scene serving as an inspiration for a musical movement in which women could express themselves in the same way men had been doing for the past several years.
+				<br><br>
+                  <img src="images/bk.jpg" id="slide_img2" >
+          Riot grrrl bands often address issues such as rape, domestic abuse, sexuality, racism, patriarchy, and female empowerment. Bands associated with the movement include Bikini Kill, Huggy Bear, Bratmobile, Heavens to Betsy, Excuse 17, Skinned Teen, Calamity Jane, Emily's Sassy Lime, Sleater-Kinney, and also queercore like Team Dresch and The Butchies. In addition to a music scene and genre, riot grrrl is a subculture involving a DIY ethic, zines, art, political action, and activism. Riot grrrls are known to hold meetings, start chapters, and support and organize women in music.
+          <br><br>
+          Bikini Kill was an American punk rock band formed in Olympia, Washington in October 1990. The group consisted of vocalist and songwriter Kathleen Hanna, guitarist Billy Karren, bassist Kathi Wilcox, and drummer Tobi Vail. The band is widely considered to be the pioneer of the riot grrrl movement, and was notorious for its radical feminist lyrics and fiery performances. Their music is characteristically abrasive and hardcore-influenced. After two full-length albums, several EPs and two compilations, they disbanded in 1997.
+			<br><br>Source: Riot Grrrl
+            </p>
+            </div>
+          <div id="slide1">
+            	<p id="slide_p">
+                <img src="images/riotcont.png" height="60px"><br>
+                Both Pussy Riot and Femen protesters are intent on effecting change from within Russia and Ukraine, not just from abroad. Nadya Tolokonnikova and Masha Alekhina, formerly of Pussy Riot, could have easily fled Russia for good after finishing their prison sentences, but instead have returned to “Mother Russia” to agitate for prisoner rights and to continue exposing Putin’s abuses of power. It should be noted that in doing so, these women are taking great personal risks with their freedom and even their physical safety. <img src="images/pussy.jpg" id="slide_img2" >Last week, Nadya and Masha were repeatedly arrested as they protested against draconian jail sentences handed down to anti-Putin activists, and Nadya claimed that their whipping by Cossacks in Sochi left welts over her body. And a picture of a Femen activist being choked in Crimea went viral last week after the assault.
+				<br><br>
+            It’s not hard to see why Pussy Riot and Femen are threats to Russia’s machismo culture and fast becoming the bane of Putin’s existence. Ever since Pussy Riot (the name is enough to piss Putin off) was arrested in 2012 on charges of “hooliganism motivated by religious hatred,” the group has drawn international media attention to Putin’s authoritarian regime—and to the sorry state of gender equality in Russia. In the song “A Punk Prayer,” which they were performing when arrested in 2012, Pussy Riot urges listeners to “become a feminist / become a feminist, become a feminist.” The chorus to another song, “Kropotkin Vodka,” demands “the f**king end to sexist Putinists!”
+			<br><br>Source: Riot Grrrl
+            </p>
+            </div>
+           </div>
+        <div class="controller" id="next6"></div>
+        </div>
+        </div>
+</div>
+</section>
+ 
+ 
+ 
+ <section id="seven" data-type="background" data-speed="10">
+ <div id="wrapper">
+	<div id="container">
+ <!-- bing free to share and use search: https://zarinaholmes.files.wordpress.com/2011/04/dsc_3953395c2a9zholmes.jpg>-->
+ <article style="background-color:#EDEDED" style="width:960px" style="margin-left:auto" style="margin-right:auto">
+ <img src="images/sources.png" height="50px"><br>
+  <a href="http://www.pacificu.edu/about-us/news-events/three-waves-feminism" target="_blank">The Three Waves</a> of Feminism By Martha Rampton -- Thursday, October 23, 2014
+ <br><br>
+ <a href="http://www.britannica.com/EBchecked/topic/724633/feminism/280084/Foundations" target="_blank">Feminism</a> In Encyclopaedia Britannica -- Thursday, March 5, 2015
+ <br><br>
+ <a href="http://time.com/2861278/famous-women-feminism/">17 Famous Women on What Feminism Means to Them</a> Time Magazine Online By Joan E. Greve -- June 23, 2014
+ <br><br>
+ <a href="http://geekfeminism.wikia.com/wiki/Slut_shaming">Geek Feminism Slut Shaming</a> Geek Feminism Wikia -- Thursday March 5, 2015
+ <br><br>
+ <a href="http://en.wikipedia.org/wiki/Riot_grrrl">Riot Girlll</a> Wikipedia -- Thursday March 5, 2015
+ <br><br>
+
+ </article>
+ </div>
+ </div>
+ </section>
+ 
+</body>
+</html>
